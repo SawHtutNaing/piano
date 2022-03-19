@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="piano.css">
+
+<body class=" overflow-hidden">
+    <div class=" container col-12 text-center mt-lg-5">
+        <input class="form-control" type="text" name="" id="cords" class="">
+        <button class="mt-5 btn btn-outline-primary" onclick="saveCord()">Save</button>
+    </div>
+    <div class=" container text-center col-12 mt-lg-5 d-flex justify-content-center flex-wrap   ">
+
+        <button class="btn btn-outline-primary" onclick="run('C4')">C4</button>
+        <button class="btn btn-outline-primary" onclick="run('D4')">D4</button>
+        <button class="btn btn-outline-primary" onclick="run('E4')">E4</button>
+        <button class="btn btn-outline-primary" onclick="run('F4')">F4</button>
+        <button class="btn btn-outline-primary" onclick="run('G4')">G4</button>
+        <button class="btn btn-outline-primary" onclick="run('A4')">A4</button>
+        <button class="btn btn-outline-primary" onclick="run('B4')">B4</button>
+        <button class="btn btn-outline-primary" onclick="run('C5')">C5</button>
+    </div>
+
+    <div class=" container col-12 text-center mt-lg-5">
+        <h6>Memory List</h6>
+        <ul id="memoryList">
+
+        </ul>
+    </div>
+
+</body>
+<script src="piano.js"></script>
+
+</html>
